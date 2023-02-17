@@ -9,8 +9,7 @@
     <version>1.0-SNAPSHOT</version>
 
     <properties>
-        <maven.compiler.source>14</maven.compiler.source>
-        <maven.compiler.target>14</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <aspectj.version>1.8.10</aspectj.version>
         <allure.version>2.8.1</allure.version>
     </properties>
@@ -26,6 +25,12 @@
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter-api</artifactId>
             <version>5.8.2</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>io.appium</groupId>
+            <artifactId>java-client</artifactId>
+            <version>6.1.0</version>
             <scope>test</scope>
         </dependency>
         <dependency>
