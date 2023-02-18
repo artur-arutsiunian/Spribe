@@ -36,7 +36,7 @@ import org.junit.jupiter.api.parallel.ExecutionMode;
         @Order(5)
         @Test
         public void checkEditUser(){
-            Assertions.assertEquals("female", REST_SERVICE1.editUser("female").getGender(), "Gender isn't correct");
+            Assertions.assertEquals("male", REST_SERVICE1.editUser("male").getGender(), "Gender isn't correct");
         }
 
         @Order(6)

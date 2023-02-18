@@ -18,7 +18,7 @@ public class RestService {
     private final static String GET_LIST_OF_USER = "player/get/all";
     private final static String GET_USER = "player/get";
     private final static String CREATE_USER = "player/create/supervisor";
-    private final static String EDIT_USER = "player/update/supervisor/2";
+    private final static String EDIT_USER = "player/update/supervisor/1";
     private final static String DELETE_ASSET = "player/delete/supervisor";
 
     static {
@@ -76,10 +76,10 @@ public class RestService {
                 .when()
                 .queryParam("age", "60")
                 .queryParam("gender", "female")
-                .queryParam("login", "test456")
+                .queryParam("login", "test4500")
                 .queryParam("password", "12345678")
                 .queryParam("role", "user")
-                .queryParam("screenName", "newFemale456")
+                .queryParam("screenName", "newFemale4500")
                 .get(BASE_URL + CREATE_USER)
                 .then()
                 .assertThat()
