@@ -42,7 +42,7 @@ import org.junit.jupiter.api.parallel.ExecutionMode;
         @Order(6)
         @Test
         public void checkDeleteUser(){
-        Assertions.assertEquals(204, REST_SERVICE1.deleteUser(1483982699), "User isn't deleted");
+        Assertions.assertEquals(204, REST_SERVICE1.deleteUser(2), "User isn't deleted");
     }
 
 

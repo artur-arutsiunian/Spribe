@@ -19,7 +19,7 @@ public class RestService {
     private final static String GET_USER = "player/get";
     private final static String CREATE_USER = "player/create/supervisor";
     private final static String EDIT_USER = "player/update/supervisor/1";
-    private final static String DELETE_ASSET = "player/delete/supervisor";
+    private final static String DELETE_USER = "player/delete/supervisor";
 
     static {
         RestAssured.filters(new RequestLoggingFilter(), new ResponseLoggingFilter());
@@ -107,7 +107,7 @@ public class RestService {
                 .contentType(ContentType.JSON)
                 .when()
                 .body(initDeleteUser(playerId))
-                .delete(BASE_URL + DELETE_ASSET)
+                .delete(BASE_URL + DELETE_USER)
                 .then()
                 .assertThat()
                 .statusCode(204)
